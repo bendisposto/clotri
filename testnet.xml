@@ -1,0 +1,41 @@
+<pnml xmlns="http://www.example.org/pnml">
+<net id="n1" type="http://www.example.org/pnml/PTNet">
+<name>
+<text>An example P/T-net</text>
+5 </name>
+<place id="p1">
+<graphics>
+<position x="20" y="20"/>
+</graphics>
+10 <name>
+<text>ready</text>
+<graphics>
+<offset x="-10" y="-8"/>
+</graphics>
+15 </name>
+<initialMarking>
+<text>3</text>
+</initialMarking>
+</place>
+20 <transition id="t1">
+<graphics>
+<position x="60" y="20"/>
+</graphics>
+<toolspecific tool="PN4all" version="0.1">
+25 <hidden/>
+</toolspecific>
+</transition>
+<arc id="a1" source="p1" target="t1">
+<graphics>
+30 <position x="30" y="5"/>
+<position x="60" y="5"/>
+</graphics>
+<inscription>
+<text>2</text>
+35 <graphics>
+<offset x="15" y="-2"/>
+</graphics>
+</inscription>
+</arc>
+40 </net>
+</pnml>
