@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<pnml xmlns="http://www.example.org/pnml">
+	<net id="n1" type="http://www.example.org/pnml/PTNet">
+		<name>
+			<text>An example P/T-net</text>
+		</name>
+		<place id="A">
+			<initialMarking>
+				<text>3</text>
+			</initialMarking>
+		</place>
+		<place id="B">
+			<initialMarking>
+				<text>0</text>
+			</initialMarking>
+		</place>
+		<transition id="t1"/>
+		<arc id="a1" source="A" target="t1">
+			<inscription>
+				<text>2</text>
+			</inscription>
+		</arc>
+		<arc id="a2" source="t1" target="B">
+			<inscription>
+				<text>5</text>
+			</inscription>
+		</arc>
+	</net>
+</pnml>
